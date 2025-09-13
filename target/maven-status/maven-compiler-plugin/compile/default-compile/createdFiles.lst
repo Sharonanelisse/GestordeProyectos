@@ -1,0 +1,10 @@
+com/smarroquin/gestordeproyectos/controller/TaskCrontoller.class
+com/smarroquin/gestordeproyectos/model/Task.class
+com/smarroquin/gestordeproyectos/model/Project.class
+com/smarroquin/gestordeproyectos/repository/TaskRepository.class
+com/smarroquin/gestordeproyectos/model/Task$Priority.class
+com/smarroquin/gestordeproyectos/repository/ProjectRepository.class
+com/smarroquin/gestordeproyectos/service/ProjectService.class
+com/smarroquin/gestordeproyectos/service/TaskService.class
+com/smarroquin/gestordeproyectos/controller/ProjectController.class
+com/smarroquin/gestordeproyectos/model/Project$Status.class
