@@ -9,7 +9,10 @@
 </h:head>
 <h:body>
     <h:form id="formProjects">
-        <p:growl id="msgs" showDetail="true" />
+        <p:growl id="msgs" showDetail="true" globalOnly="true"/>
+        <h:form id="formProjects">
+            ...
+        </h:form>
 
         <p:commandButton value="Nuevo Proyecto"
                          actionListener="#{projectController.newProject}"
@@ -51,7 +54,10 @@
                 <h:outputLabel for="desc" value="Descripción"/>
                 <p:inputTextarea id="desc" value="#{projectController.selected.description}" />
             </h:panelGrid>
-            <p:commandButton value="Guardar" actionListener="#{projectController.save}" update=":formProjects :msgs" oncomplete="PF('dlgProject').hide()" />
+            <p:commandButton value="Guardar"
+                             actionListener="#{projectController.save}"
+                             update=":formProjects :formProjects:msgs"
+                             oncomplete="PF('dlgProject').hide()" />
         </h:form>
     </p:dialog>
 
